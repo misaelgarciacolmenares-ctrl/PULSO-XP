@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>PULSO XP | Recargas Gamer en Venezuela</title>
+<meta name="description" content="Recarga tus videojuegos favoritos en PULSO XP. Encuentra opciones para Free Fire, Blood Strike y Call of Duty Mobile con un proceso de compra sencillo.">
+<meta property="og:title" content="PULSO XP | Recargas Gamer en Venezuela">
+<meta property="og:description" content="Free Fire, Blood Strike y Call of Duty Mobile con un proceso de compra sencillo.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600&family=Orbitron:wght@500;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<style>
+@property --a{syntax:"<angle>";inherits:false;initial-value:0deg}
+:root{--mid:#100A2B;--deep:#29145F;--elec:#783CFF;--cyan:#00E9C6;--mag:#F12DAD;--lav:#B9AEDB;--white:#F8F6FF;--bg:#090719;color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:calc(80px + env(safe-area-inset-top,0px))}
+body{margin:0;background:var(--bg);color:var(--white);font:400 16px/1.6 Inter,system-ui,sans-serif;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:60}
+body::after{content:"";position:fixed;inset:0;z-index:-2;background:radial-gradient(60vw 50vh at 85% 5%,#783CFF44,transparent),radial-gradient(50vw 50vh at 5% 60%,#00E9C622,transparent),radial-gradient(45vw 45vh at 70% 95%,#F12DAD22,transparent),var(--bg)}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{font-family:Anton,Oswald,Impact,sans-serif;font-weight:400;line-height:1.02;margin:0;letter-spacing:.01em}
+h2{font-size:clamp(2rem,5vw,3.4rem);text-transform:uppercase}
+p{margin:0}
+.sub{font-family:"Space Grotesk",system-ui,sans-serif}
+.tech{font-family:Orbitron,system-ui,sans-serif}
+.wrap{width:min(1180px,100% - 40px);margin-inline:auto}
+section{padding:clamp(56px,9vw,104px) 0;position:relative}
+#fx{position:fixed;inset:0;z-index:-1;pointer-events:none}
+#glow{position:fixed;width:420px;height:420px;margin:-210px 0 0 -210px;border-radius:50%;background:radial-gradient(#783CFF40,transparent 65%);pointer-events:none;z-index:-1;left:50%;top:30%}
+/* loader */
+#load{position:fixed;inset:0;z-index:100;background:var(--bg);display:grid;place-items:center;transition:opacity .5s,visibility .5s}
+#load.off{opacity:0;visibility:hidden}
+#load svg{width:84px;height:84px;filter:drop-shadow(0 0 18px var(--elec));animation:beat 1s ease-in-out infinite}
+#load i{display:block;height:3px;width:160px;margin:18px auto 0;background:linear-gradient(90deg,transparent,var(--cyan),transparent);background-size:200% 100%;animation:slide 1.1s linear infinite}
+@keyframes beat{50%{transform:scale(1.12)}}@keyframes slide{to{background-position:-200% 0}}
+/* nav */
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:#100A2Bcc;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid #783CFF44}
+.nav{display:flex;align-items:center;gap:22px;height:68px}
+.brand{display:flex;align-items:center;gap:10px;font:700 1.15rem Orbitron,sans-serif;letter-spacing:.06em}
+.brand svg{width:38px;height:38px}
+.links{display:flex;gap:22px;margin-left:auto;font:500 .95rem "Space Grotesk",sans-serif;color:var(--lav)}
+.links a:hover{color:var(--white)}
+.acts{display:flex;gap:10px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:46px;padding:0 24px;border:0;border-radius:12px;font:700 .95rem "Space Grotesk",sans-serif;cursor:pointer;color:var(--white);transition:transform .15s,box-shadow .25s;position:relative;overflow:hidden}
+.btn:active{transform:scale(.96)}
+.cy{background:var(--cyan);color:#06131a;box-shadow:0 0 0 0 #00E9C600,0 6px 26px #00E9C655}
+.cy:hover{box-shadow:0 0 0 4px #00E9C633,0 8px 34px #00E9C699}
+.cy::after{content:"";position:absolute;inset:0;background:linear-gradient(105deg,transparent 35%,#fff9 50%,transparent 65%);transform:translateX(-120%);transition:transform .6s}
+.cy:hover::after{transform:translateX(120%)}
+.gh{background:#783CFF22;border:1px solid #783CFF99}
+.gh:hover{background:#783CFF44;box-shadow:0 0 24px #783CFF66}
+:focus-visible{outline:3px solid var(--cyan);outline-offset:3px}
+/* hero */
+.hero{padding-top:clamp(40px,7vw,90px);overflow:hidden}
+.hg{display:grid;grid-template-columns:1.05fr .95fr;gap:30px;align-items:center}
+.hero h1{font-size:clamp(3.2rem,9.4vw,7.4rem);text-transform:uppercase;text-shadow:0 0 30px #783CFF88}
+.hero h1 span{display:block}
+.hero h1 span:nth-child(2){color:transparent;-webkit-text-stroke:2px var(--cyan);text-shadow:0 0 26px #00E9C677}
+.hero h1 span:nth-child(3){background:linear-gradient(90deg,var(--elec),var(--mag));-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 0 18px #F12DAD66)}
+.hero p.lead{max-width:46ch;margin:24px 0 30px;color:var(--lav);font-size:1.1rem}
+.cta{display:flex;gap:14px;flex-wrap:wrap}
+.trust{display:flex;gap:10px;flex-wrap:wrap;margin-top:34px}
+.trust li{list-style:none;padding:8px 14px;border:1px solid #783CFF66;border-radius:99px;background:#29145F66;font:500 .85rem "Space Grotesk",sans-serif;color:var(--lav)}
+.trust{padding:0}
+.stage{position:relative;aspect-ratio:1;max-width:520px;margin-inline:auto;width:100%}
+.stage .ring{position:absolute;inset:6%;border-radius:50%;border:2px dashed #783CFF99;animation:spin 40s linear infinite}
+.stage .ring.b{inset:20%;border:2px solid #00E9C655;animation-duration:26s;animation-direction:reverse}
+.stage .core{position:absolute;inset:30%;display:grid;place-items:center;border-radius:28%;background:linear-gradient(145deg,#29145F,#100A2B);box-shadow:0 0 70px #783CFF99,inset 0 0 30px #783CFF66;animation:float 6s ease-in-out infinite}
+.stage .core svg{width:70%;height:70%;filter:drop-shadow(0 0 16px var(--elec))}
+.chip{position:absolute;width:21%;aspect-ratio:1;display:grid;place-items:center;border-radius:22%;background:#29145Fcc;border:1px solid #783CFF;box-shadow:0 0 28px #783CFF77;backdrop-filter:blur(6px);animation:float 5s ease-in-out infinite}
+.chip svg{width:56%;height:56%}
+.chip.c1{left:4%;top:14%;border-color:var(--cyan);box-shadow:0 0 28px #00E9C666}
+.chip.c2{right:2%;top:30%;animation-delay:-2s;border-color:var(--mag);box-shadow:0 0 28px #F12DAD66}
+.chip.c3{left:20%;bottom:6%;animation-delay:-3.5s}
+@keyframes spin{to{transform:rotate(360deg)}}@keyframes float{50%{transform:translateY(-16px)}}
+.wave{position:absolute;left:0;bottom:0;width:200%;height:90px;opacity:.55;animation:wv 18s linear infinite;pointer-events:none}
+@keyframes wv{to{transform:translateX(-50%)}}
+/* games */
+.head{max-width:60ch;margin-bottom:44px}
+.head p{color:var(--lav);margin-top:14px}
+.games{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;perspective:1000px}
+.card{--a:0deg;position:relative;border-radius:22px;padding:2px;background:conic-gradient(from var(--a),var(--elec),var(--cyan),var(--mag),var(--elec));animation:rot 6s linear infinite;transition:transform .2s ease-out,box-shadow .3s;transform-style:preserve-3d;will-change:transform}
+.card:hover{box-shadow:0 24px 60px #783CFF66}
+@keyframes rot{to{--a:360deg}}
+.card .in{height:100%;border-radius:20px;background:linear-gradient(170deg,#29145Fe6,#100A2Bf2);backdrop-filter:blur(10px);display:flex;flex-direction:column;overflow:hidden}
+.art{height:170px;display:grid;place-items:center;position:relative;background:radial-gradient(circle at 50% 120%,var(--c) 0,transparent 70%)}
+.art svg{width:92px;height:92px;filter:drop-shadow(0 0 18px var(--c));transform:translateZ(40px)}
+.card .tx{padding:22px 24px 26px;display:flex;flex-direction:column;gap:10px;flex:1}
+.card h3{font-size:2rem;text-transform:uppercase}
+.card .ph{font:700 .8rem "Space Grotesk",sans-serif;color:var(--c);letter-spacing:.04em;text-transform:uppercase}
+.card p{color:var(--lav);font-size:.95rem}
+.card .btn{margin-top:auto}
+/* catalog */
+.tabs{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:22px}
+.tab{min-height:44px;padding:0 20px;border-radius:99px;border:1px solid #783CFF88;background:#29145F55;color:var(--lav);font:600 .92rem "Space Grotesk",sans-serif;cursor:pointer}
+.tab[aria-selected=true]{background:var(--elec);color:#fff;box-shadow:0 0 24px #783CFF99}
+.panel,.glass{border:1px solid #783CFF66;border-radius:22px;background:#29145F55;backdrop-filter:blur(12px);padding:clamp(24px,4vw,44px)}
+.panel{min-height:210px;display:flex;flex-direction:column;gap:12px;align-items:flex-start;justify-content:center}
+.panel h3{font-size:1.8rem;text-transform:uppercase}
+.panel p{color:var(--lav);max-width:58ch}
+.req{display:flex;gap:8px;flex-wrap:wrap}
+.req span{font:500 .8rem "Space Grotesk",sans-serif;padding:5px 12px;border-radius:8px;background:#100A2B;border:1px solid #783CFF55;color:var(--lav)}
+/* steps + benefits */
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.step b{display:block;font:700 1.5rem Orbitron,sans-serif;color:var(--cyan);margin-bottom:8px;text-shadow:0 0 16px #00E9C666}
+.step h3,.ben h3{font:700 1.15rem "Space Grotesk",sans-serif;margin-bottom:6px}
+.glass p{color:var(--lav);font-size:.95rem}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+/* faq */
+details{border:1px solid #783CFF55;border-radius:16px;background:#29145F44;margin-bottom:12px;overflow:hidden;transition:border-color .2s,box-shadow .3s}
+details[open]{border-color:var(--cyan);box-shadow:0 0 26px #00E9C633}
+summary{cursor:pointer;list-style:none;padding:18px 22px;font:700 1.02rem "Space Grotesk",sans-serif;display:flex;justify-content:space-between;gap:14px;align-items:center}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:1.6rem;color:var(--cyan);transition:transform .25s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{padding:0 22px 20px;color:var(--lav);animation:fd .3s}
+@keyframes fd{from{opacity:0;transform:translateY(-6px)}}
+.faq{max-width:820px}
+/* support + footer */
+.sup{display:flex;flex-wrap:wrap;gap:24px;align-items:center;justify-content:space-between}
+.sup h2{max-width:14ch}
+footer{border-top:1px solid #783CFF44;padding:34px 0 120px;color:var(--lav);font-size:.9rem}
+footer .wrap{display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between;align-items:center}
+/* floating */
+.wa{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));width:58px;height:58px;border-radius:50%;background:var(--cyan);display:grid;place-items:center;z-index:55;box-shadow:0 0 0 0 #00E9C688,0 8px 30px #00E9C677;animation:pu 2.8s infinite}
+.wa svg{width:30px;height:30px}
+@keyframes pu{70%{box-shadow:0 0 0 18px #00E9C600,0 8px 30px #00E9C677}}
+.bn{display:none}
+#toast{position:fixed;left:50%;bottom:calc(96px + env(safe-area-inset-bottom,0px));transform:translate(-50%,20px);background:var(--deep);border:1px solid var(--cyan);padding:12px 20px;border-radius:12px;z-index:70;opacity:0;transition:.3s;pointer-events:none;max-width:92vw;text-align:center;font:500 .9rem "Space Grotesk",sans-serif}
+#toast.on{opacity:1;transform:translate(-50%,0)}
+.rv{opacity:0;transform:translateY(18px);transition:opacity .7s,transform .7s}.rv.in{opacity:1;transform:none}
+@media(max-width:900px){
+.links,.acts .gh{display:none}.hg{grid-template-columns:1fr}.stage{max-width:380px;order:-1}
+.games,.grid3{grid-template-columns:1fr}.grid4{grid-template-columns:1fr 1fr}
+.nav{height:60px}.acts{margin-left:auto}
+.bn{display:grid;grid-template-columns:repeat(5,1fr);position:fixed;left:0;right:0;bottom:0;z-index:54;background:#100Af2;background:#100A2Bf2;backdrop-filter:blur(14px);border-top:1px solid #783CFF66;padding:6px 6px calc(6px + env(safe-area-inset-bottom,0px))}
+.bn a,.bn button{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;min-height:54px;background:none;border:0;color:var(--lav);font:600 .7rem "Space Grotesk",sans-serif;cursor:pointer}
+.bn svg{width:22px;height:22px}
+.wa{bottom:calc(84px + env(safe-area-inset-bottom,0px))}#toast{bottom:calc(150px + env(safe-area-inset-bottom,0px))}
+.card{animation-duration:10s}
+}
+@media(max-width:520px){.grid4{grid-template-columns:1fr}.cta .btn{flex:1 1 100%}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.rv{opacity:1;transform:none}#load{display:none}}
+</style></head><body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#783CFF"/><stop offset=".6" stop-color="#F12DAD"/><stop offset="1" stop-color="#00E9C6"/></linearGradient>
+<symbol id="logo" viewBox="0 0 48 48"><rect x="2" y="2" width="44" height="44" rx="12" fill="#100A2B" stroke="url(#g)" stroke-width="2"/><path d="M16 38V11h10a7.5 7.5 0 0 1 0 15H16" fill="none" stroke="url(#g)" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/><path d="M5 31h9l3-6 4 11 3-8h4l2-3h9" fill="none" stroke="#00E9C6" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol></defs></svg>
+
+<div id="load" role="status" aria-label="Cargando PULSO XP"><div><svg><use href="#logo"/></svg><i></i></div></div>
+<canvas id="fx" aria-hidden="true"></canvas><div id="glow" aria-hidden="true"></div>
+
+<header><div class="wrap nav">
+<a class="brand" href="#inicio" aria-label="PULSO XP, inicio"><svg><use href="#logo"/></svg>PULSO XP</a>
+<nav class="links" aria-label="Principal"><a href="#inicio">Inicio</a><a href="#juegos">Videojuegos</a><a href="#ofertas">Ofertas</a><a href="#como">Cómo comprar</a><a href="#soporte">Soporte</a></nav>
+<div class="acts"><button class="btn gh" data-soon="El inicio de sesión se activa en la Fase 2.">Iniciar sesión</button><button class="btn cy" data-soon="El carrito se activa en la Fase 3.">Carrito</button></div>
+</div></header>
+
+<main id="inicio">
+<section class="hero"><div class="wrap hg">
+<div>
+<h1><span>Tu juego.</span><span>Tu ritmo.</span><span>Tu recarga.</span></h1>
+<p class="lead">Lleva tu experiencia gamer al siguiente nivel. Encuentra tus recargas favoritas en un solo lugar y prepárate para volver a la acción.</p>
+<div class="cta"><a class="btn cy" href="#paquetes">Explorar recargas</a><a class="btn gh" href="#juegos">Descubrir videojuegos</a></div>
+<ul class="trust"><li>Precios en bolívares (VES)</li><li>Pago Móvil</li><li>Cada pago se verifica antes de recargar</li><li>Nunca pedimos tu contraseña de juego</li></ul>
+</div>
+<div class="stage" aria-hidden="true">
+<div class="ring"></div><div class="ring b"></div>
+<div class="core"><svg><use href="#logo"/></svg></div>
+<div class="chip c1"><svg viewBox="0 0 24 24" fill="none" stroke="#00E9C6" stroke-width="1.8" stroke-linejoin="round"><path d="M12 2 21 9l-9 13L3 9z"/><path d="M3 9h18M8 9l4 13 4-13"/></svg></div>
+<div class="chip c2"><svg viewBox="0 0 24 24" fill="none" stroke="#F12DAD" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="7"/><path d="M12 2v6M12 16v6M2 12h6M16 12h6"/></svg></div>
+<div class="chip c3"><svg viewBox="0 0 24 24" fill="none" stroke="#B9AEDB" stroke-width="1.8" stroke-linejoin="round"><path d="m12 2 8.7 5v10L12 22l-8.7-5V7z"/><path d="M12 8v8M8 10v4M16 10v4"/></svg></div>
+</div></div>
+<svg class="wave" viewBox="0 0 1200 90" preserveAspectRatio="none" aria-hidden="true"><path d="M0 45Q150 5 300 45T600 45T900 45T1200 45V90H0Z" fill="#783CFF33"/><path d="M0 60Q150 25 300 60T600 60T900 60T1200 60V90H0Z" fill="#00E9C622"/></svg>
+</section>
+
+<section id="juegos"><div class="wrap">
+<div class="head rv"><h2>Tus juegos. Tus reglas.</h2><p>Tus videojuegos favoritos y las recargas que necesitas, reunidos en un solo lugar.</p></div>
+<div class="games">
+<article class="card rv" style="--c:#F12DAD"><div class="in"><div class="art"><svg viewBox="0 0 24 24" fill="none" stroke="#F12DAD" stroke-width="1.4" stroke-linejoin="round"><path d="M12 2 21 9l-9 13L3 9z"/><path d="M3 9h18M8 9l4 13 4-13"/></svg></div><div class="tx"><span class="ph">Cada partida merece una nueva experiencia.</span><h3>Free Fire</h3><p>Encuentra tus paquetes de diamantes y lleva tu experiencia de Free Fire al siguiente nivel.</p><button class="btn cy" data-game="ff">Recargar Free Fire</button></div></div></article>
+<article class="card rv" style="--c:#783CFF"><div class="in"><div class="art"><svg viewBox="0 0 24 24" fill="none" stroke="#783CFF" stroke-width="1.4" stroke-linecap="round"><circle cx="12" cy="12" r="7"/><circle cx="12" cy="12" r="2"/><path d="M12 2v6M12 16v6M2 12h6M16 12h6"/></svg></div><div class="tx"><span class="ph">Entra al combate con toda la energía.</span><h3>Blood Strike</h3><p>Explora nuestras opciones de recarga y prepárate para tu próxima partida.</p><button class="btn cy" data-game="bs">Recargar Blood Strike</button></div></div></article>
+<article class="card rv" style="--c:#00E9C6"><div class="in"><div class="art"><svg viewBox="0 0 24 24" fill="none" stroke="#00E9C6" stroke-width="1.4" stroke-linejoin="round"><path d="m12 2 8.7 5v10L12 22l-8.7-5V7z"/><path d="M12 8v8M8 10v4M16 10v4"/></svg></div><div class="tx"><span class="ph">La batalla no espera.</span><h3>Call of Duty: Mobile</h3><p>Encuentra tus paquetes de COD Points y disfruta de tu experiencia en Call of Duty: Mobile.</p><button class="btn cy" data-game="cod">Recargar COD Mobile</button></div></div></article>
+</div></div></section>
+
+<section id="paquetes"><div class="wrap">
+<div class="head rv"><h2>Paquetes de recarga</h2><p>Cada paquete, precio y tiempo de entrega saldrá del panel de administración. No mostramos cifras que todavía no existen.</p></div>
+<div class="tabs" role="tablist" aria-label="Videojuego"></div>
+<div class="panel" id="panel" role="tabpanel" aria-live="polite"></div>
+</div></section>
+
+<section id="ofertas"><div class="wrap"><div class="glass rv"><h2>Ofertas gamer</h2><p style="margin-top:12px">Aquí aparecerán solo las promociones y cupones que se activen desde administración. Por ahora no hay ninguna activa.</p></div></div></section>
+
+<section id="como"><div class="wrap">
+<div class="head rv"><h2>Cómo comprar</h2></div>
+<div class="grid4">
+<div class="glass step rv"><b>01</b><h3>Elige tu juego</h3><p>Selecciona el videojuego y el paquete que necesitas.</p></div>
+<div class="glass step rv"><b>02</b><h3>Indica tu ID</h3><p>Escribe tu ID de jugador y región. Nunca pedimos tu contraseña.</p></div>
+<div class="glass step rv"><b>03</b><h3>Paga y registra</h3><p>Paga con Pago Móvil o con Mi Saldo Pulso y registra la referencia.</p></div>
+<div class="glass step rv"><b>04</b><h3>Recibe tu recarga</h3><p>Verificamos tu pago y procesamos la recarga. Te avisamos cuando esté completada.</p></div>
+</div></div></section>
+
+<section><div class="wrap">
+<div class="head rv"><h2>Por qué PULSO XP</h2></div>
+<div class="grid3">
+<div class="glass ben rv"><h3>Mi Saldo Pulso</h3><p>Agrega saldo una vez y úsalo en tus próximas compras. Cada movimiento queda registrado.</p></div>
+<div class="glass ben rv"><h3>Pagos verificados</h3><p>Un pedido solo pasa a pagado cuando el ingreso se confirma de verdad.</p></div>
+<div class="glass ben rv"><h3>Seguimiento claro</h3><p>Consulta el estado de cada pedido y su historial desde tu cuenta.</p></div>
+</div></div></section>
+
+<section id="faq"><div class="wrap faq">
+<div class="head rv"><h2>Preguntas frecuentes</h2></div>
+<details><summary>¿Cómo puedo recargar?</summary><p>Selecciona tu videojuego, elige el paquete y sigue las instrucciones para completar tu compra.</p></details>
+<details><summary>¿Cuánto tarda en llegar mi recarga?</summary><p>Dependerá del producto, el proveedor y la disponibilidad. El tiempo estimado aparecerá en la ficha del producto.</p></details>
+<details><summary>¿Cómo puedo pagar?</summary><p>Los métodos disponibles se mostrarán al finalizar el proceso de compra.</p></details>
+<details><summary>¿Cómo funciona Mi Saldo Pulso?</summary><p>Puedes agregar saldo mediante los métodos disponibles y usar el importe confirmado para pagar compras dentro de la plataforma.</p></details>
+<details><summary>¿Puedo pagar directamente con Pago Móvil?</summary><p>Sí. Cuando el método esté habilitado, podrás pagar sin recargar antes tu billetera.</p></details>
+<details><summary>¿Qué hago si mi pedido no llega?</summary><p>Contacta con soporte y proporciona el identificador de tu pedido.</p></details>
+<details><summary>¿Necesito compartir mi contraseña?</summary><p>No. No compartas tu contraseña ni códigos de verificación de tu cuenta de videojuego.</p></details>
+</div></section>
+
+<section id="soporte"><div class="wrap"><div class="glass sup rv"><h2>Centro de soporte</h2>
+<div><p style="max-width:42ch;margin-bottom:16px">¿Dudas con un pago, un pedido o una recarga? Escríbenos por WhatsApp y te ayudamos.</p><a class="btn cy" href="https://wa.me/584241853177?text=%C2%A1Hola!%20Bienvenido%20a%20PULSO%20XP.%20%C2%BFEn%20qu%C3%A9%20podemos%20ayudarte%3F" target="_blank" rel="noopener">Hablar por WhatsApp</a></div></div></div></section>
+</main>
+
+<footer><div class="wrap"><a class="brand" href="#inicio"><svg><use href="#logo"/></svg>PULSO XP</a><span class="sub">Tu juego. Tu ritmo. Tu recarga.</span><span>Las marcas de los videojuegos pertenecen a sus titulares.</span></div></footer>
+
+<a class="wa" href="https://wa.me/584241853177?text=%C2%A1Hola!%20Bienvenido%20a%20PULSO%20XP.%20%C2%BFEn%20qu%C3%A9%20podemos%20ayudarte%3F" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="#06131a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21l1.7-5A8.5 8.5 0 1 1 8 19.3z"/><path d="M9 8c0 4 3 7 7 7l1.500-1.800-2.500-1.400-1 1c-1.200-.5-2-1.300-2.500-2.500l1-1L11.500 6z"/></svg></a>
+<nav class="bn" aria-label="Móvil">
+<a href="#inicio"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11 12 3l9 8M5 10v10h14V10"/></svg>Inicio</a>
+<a href="#juegos"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="11" rx="5"/><path d="M7 10v5M4.500 12.500h5M16 11h.01M18.500 14h.01"/></svg>Juegos</a>
+<button data-soon="El carrito se activa en la Fase 3."><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h2l2.500 11h10L20 8H6"/><circle cx="9" cy="19" r="1"/><circle cx="17" cy="19" r="1"/></svg>Carrito</button>
+<button data-soon="Mi Saldo Pulso se activa en la Fase 4."><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="13" rx="3"/><path d="M3 10h18M16 15h2"/></svg>Saldo</button>
+<button data-soon="Las cuentas se activan en la Fase 2."><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4 4-6 8-6s7 2 8 6"/></svg>Cuenta</button>
+</nav>
+<div id="toast" role="status"></div>
+
+<script>
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const rm=matchMedia("(prefers-reduced-motion:reduce)").matches,fine=matchMedia("(pointer:fine)").matches;
+addEventListener("load",()=>setTimeout(()=>$("#load").classList.add("off"),rm?0:900));
+setTimeout(()=>$("#load").classList.add("off"),3000);
+/* toast */
+let tt;function toast(m){const t=$("#toast");t.textContent=m;t.classList.add("on");clearTimeout(tt);tt=setTimeout(()=>t.classList.remove("on"),2600)}
+$$("[data-soon]").forEach(b=>b.addEventListener("click",()=>toast(b.dataset.soon)));
+/* catalog */
+const G={ff:["Free Fire","Diamantes"],bs:["Blood Strike","Monedas y paquetes de recarga"],cod:["Call of Duty: Mobile","COD Points"]};
+const wa="https://wa.me/584241853177?text=";
+function show(k){
+ $$(".tab").forEach(t=>t.setAttribute("aria-selected",t.dataset.k===k));
+ const [n,c]=G[k];
+ $("#panel").innerHTML=`<h3>${n}</h3><div class="req"><span>Categoría: ${c}</span><span>Moneda: VES</span><span>Requiere: ID de jugador y región</span></div><p>Todavía no hay paquetes publicados para este juego. Cuando se carguen desde administración, aquí verás cantidad, precio en bolívares, disponibilidad y tiempo estimado de entrega.</p><a class="btn gh" target="_blank" rel="noopener" href="${wa}${encodeURIComponent("Hola, quiero consultar recargas de "+n)}">Consultar disponibilidad</a>`;
+}
+$(".tabs").innerHTML=Object.keys(G).map(k=>`<button class="tab" role="tab" data-k="${k}">${G[k][0]}</button>`).join("");
+$$(".tab").forEach(t=>t.addEventListener("click",()=>show(t.dataset.k)));
+$$("[data-game]").forEach(b=>b.addEventListener("click",()=>{show(b.dataset.game);$("#paquetes").scrollIntoView({behavior:rm?"auto":"smooth"})}));
+show("ff");
+/* reveal */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.12});
+$$(".rv").forEach(e=>io.observe(e));
+/* tilt + glow (desktop) */
+if(fine&&!rm){
+ const gl=$("#glow");addEventListener("pointermove",e=>{gl.style.transform=`translate(${e.clientX-innerWidth/2}px,${e.clientY-innerHeight*.3}px)`});
+ gl.style.transition="transform .25s ease-out";
+ $$(".card").forEach(c=>{c.addEventListener("pointermove",e=>{const r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;c.style.transform=`rotateY(${x*10}deg) rotateX(${-y*10}deg) translateZ(8px)`});c.addEventListener("pointerleave",()=>c.style.transform="")});
+}
+/* particles */
+if(!rm){
+ const cv=$("#fx"),x=cv.getContext("2d"),cols=["#783CFF","#00E9C6","#F12DAD","#B9AEDB"];let W,H,P=[];
+ const size=()=>{W=cv.width=innerWidth;H=cv.height=innerHeight;P=Array.from({length:innerWidth<700?24:60},()=>({x:Math.random()*W,y:Math.random()*H,r:Math.random()*2+.5,v:Math.random()*.35+.1,c:cols[Math.random()*4|0],p:Math.random()*6}))};
+ size();addEventListener("resize",size);
+ (function f(t){x.clearRect(0,0,W,H);for(const p of P){p.y-=p.v;if(p.y<-5){p.y=H+5;p.x=Math.random()*W}x.globalAlpha=.35+.35*Math.sin(t/700+p.p);x.fillStyle=p.c;x.shadowColor=p.c;x.shadowBlur=8;x.beginPath();x.arc(p.x,p.y,p.r,0,7);x.fill()}requestAnimationFrame(f)})(0);
+}
+</script>
+</body></html>
